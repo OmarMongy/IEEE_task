@@ -26,8 +26,6 @@ output reg out
 
 always @(*)
 begin
-if(sel < 11)
-begin
   case(sel)
     4'b0000 : out = inp[0];
     4'b0001 : out = inp[1];
@@ -41,9 +39,6 @@ begin
     4'b1001 : out = inp[9];
     4'b1010 : out = inp[10];
   endcase     
-end  
-else
-  out = out;
 end 
 endmodule
 
