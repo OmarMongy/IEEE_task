@@ -37,7 +37,6 @@ begin
     4'b0111 : out = inp[7];
     4'b1000 : out = inp[8];
     4'b1001 : out = inp[9];
-    4'b1010 : out = inp[10];
   endcase     
 end 
 endmodule
