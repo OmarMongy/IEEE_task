@@ -39,7 +39,7 @@ module RX_IEEE(
      
     always @(*) 
     begin 
-        date = 10'b1_1001_1001_0 ;
+        date = 10'b0_0000_0000_1 ;
        case(bit_count) 
            0: date[0] = Rx_date ;
            1: date[1] = Rx_date ;
@@ -51,7 +51,7 @@ module RX_IEEE(
            7: date[7] = Rx_date ;
            8: date[8] = Rx_date ;
            9: date[9] = Rx_date ; 
-            default : date = 10'b1_1001_1001_0 ;
+            default : date = 10'b0_0000_0000_1 ;
        endcase   
    end
    
